@@ -28,12 +28,14 @@ export default function Shop() {
                 {shopItem && shopItem.length > 0 && shopItem.map((item, index) => (
                     <div key={index} className="shop-item">
                         <div className="img-container">
-                            <img className="shop-item-img" src={item.mainImage.mainImagePath} alt={item.currentSlug} />
+                            <Link href={`/shop/${item.currentSlug}`}>
+                                <img className="shop-item-img" src={item.mainImage.mainImagePath} alt={item.currentSlug} />
+                            </Link>
                         </div>
                         <p>{item.vaseName}</p>
                         <p>{item.price}</p>
                         <Link href={`/shop/${item.currentSlug}`}>
-                            <p>buy</p>
+                            <p>★</p>
                         </Link>
                     </div>
                 ))}
