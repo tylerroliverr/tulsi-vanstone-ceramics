@@ -34,6 +34,14 @@ export const product = {
             title: "Description",
             name: "description",
             type: "text"
-        }
+        },
+        {
+            type: 'slug',
+            name: 'slug',
+            title: 'image slug',
+            options: {
+                source: 'vaseName'
+            }
+        },
     ]
 }

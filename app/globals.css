@@ -62,3 +62,39 @@ p {
   object-fit: contain;
   display: block;
 }
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.prod-image {
+  width: 450px;
+  height: auto;
+}
+
+.vase-text-container {
+  margin-left: 2rem;
+}
+
+.info-container {
+  display: flex;
+}
+
+.thumbnail-container {
+  width: 50%;
+}
+
+.thumb-image {
+  width: 150px;
+  height: auto;
+}
+
+.description-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: 3rem;
+}
