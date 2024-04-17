@@ -1,5 +1,6 @@
 import NavBar from "./components/navbar";
 import "./globals.css";
+import SmoothScrolling from "./components/smoothScrolling";
 
 export const metadata = {
   title: "Tulsi Vanstone Ceramics",
@@ -11,7 +12,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <NavBar/>
-        {children}
+        <SmoothScrolling>
+          {children}
+        </SmoothScrolling>
       </body>
     </html>
   );
